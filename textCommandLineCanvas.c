@@ -19,8 +19,8 @@
  */
 
 // buffer width & height
-#define WIDTH   40		
-#define HEIGHT  40
+#define WIDTH   80		
+#define HEIGHT  80
 
 // first ascii character implemented in the character map
 #define BASE_CHARMAP  32  // first ascii defined - 32 = ascii of space
@@ -129,19 +129,21 @@ char charmap[127][8] = {
 
 int main() {
     
-    clearCanvas(canvas);
+    clearCanvas(banner);
          
-    addWords(canvas, "ABCDEFGHIJKLM", 4, 5);
-    addWords(canvas, "NOPQRSTUVWXYZ", 4, 14);
-    addWords(canvas, "!\"#$%&'()*+,-", 4, 23);
-    addWords(canvas, "./0123456789:", 4, 32);
-    addWords(canvas, ";<=>?@[\\]^_`", 4, 41);
-    addWords(canvas, "a b cd", 4, 50);
-    
-    addBox(canvas, 1, 1, 99, 62,  "-\\|/-\\|/");
-    addBox(canvas, 0, 0, 100, 63, "********");
+    addWords(banner, "ABCDEFGHIJKL", 4, 5);
+    addWords(banner, "MNOPQRSTUVWX", 4, 14);
+    addWords(banner, "YZ1234567890", 4, 23);
+    addWords(banner, "!\"#$%&'()*+,", 4, 32);
+    addWords(banner, "-./:;<=>?@[\\", 4, 41); 
+    addWords(banner, "]^_`", 4, 50);
+    addWords(banner, "a b", CENTER, 59);
+        
+    addBox(banner, 1, 1, WIDTH - 2, HEIGHT - 2,  "-\\|/-\\|/");
+    addBox(banner, 0, 0, WIDTH - 1, HEIGHT - 1, "********");
        
-    drawCanvas(canvas);
+    drawCanvas(banner, ORIENTATION_0);
+    drawCanvas(banner, ORIENTATION_90);
        
     return 0;
 }
