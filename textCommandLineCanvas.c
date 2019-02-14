@@ -128,7 +128,7 @@ char charmap[127][8] = {
 };
 
 int main() {
-    /*
+    
     clearCanvas(canvas);
          
     addWords(canvas, "ABCDEFGHIJKLM", 4, 5);
@@ -140,29 +140,9 @@ int main() {
     
     addBox(canvas, 1, 1, 99, 62,  "-\\|/-\\|/");
     addBox(canvas, 0, 0, 100, 63, "********");
-    
-    addLineH(canvas, 2, 13, 97, '_');
-    addLineV(canvas, 90, 3, 62, '|');
-    addLineV(canvas, 92, 3, 62, '^');
-    
+       
     drawCanvas(canvas);
-    */
-    
-    clearCanvas(banner);
-    //addBox(banner, 0, 0, WIDTH - 1, HEIGHT - 1, "########");
-    //addBox(banner, 1, 1, WIDTH - 2, HEIGHT - 2, "- | - | ");
-    
-    //addWords(canvas, "a BE MY VALENTINE a", 4, 6 );
-    //addWords(canvas, "a  FEB 14, 2019   a", 4, 18);
-    addBox(banner, 0, 0, WIDTH - 1, HEIGHT - 1, "########");
-    addWords(banner, "ABE", CENTER, 2 );
-    addWords(banner, "b", CENTER, 10 );
-        
-    addLineH(banner, 2, 9, WIDTH - 3, '*');
-    
-    drawCanvas(banner, PORTRAIT);
-    //drawCanvas(banner, LANDSCAPE);
-    
+       
     return 0;
 }
 
