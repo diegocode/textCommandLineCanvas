@@ -5,6 +5,8 @@
  * Simple textCommandLineCanvas  
  * 
  * diegoCode (Diego Codevilla) / ARG / 2019
+ *
+ * CC-BY-SA 4
  * 
  * This program allow to:
  *
@@ -240,9 +242,9 @@ void addLineV(char banner[HEIGHT][WIDTH], int posx0, int posy0, int posy1, char 
  * 			from the upper border (Ej. if borders is "-1|2-3|4" 
  * 			the box will be:
  * 
- *          4-------1
- * 			|		|
- * 			|		|
+ *                      4-------1
+ * 			|	|
+ * 			|	|
  * 			3-------2
  * 
  */
